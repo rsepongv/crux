@@ -1,0 +1,7 @@
+
+// test printBool
+
+func main() {
+  printBool(true);
+  printBool(false);
+}

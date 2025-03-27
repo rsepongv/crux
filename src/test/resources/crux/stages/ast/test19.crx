@@ -1,0 +1,13 @@
+// test recusion
+
+func rec( a int ) {
+  if (a > 0) {
+    rec(a-1);
+  }
+  printInt(a);
+  println();
+}
+
+func main() {
+  rec(5);
+}

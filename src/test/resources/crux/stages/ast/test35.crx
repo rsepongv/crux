@@ -1,0 +1,32 @@
+// test calling functions
+
+func myPrintZero() {
+  printInt(0);
+}
+
+func myPrintOne(a int) {
+  printInt(a);
+}
+
+func myPrintTwo(a int, b int) {
+  printInt(a);
+  printInt(b);
+}
+
+func myPrintThree(a int, b int, c int) {
+  printInt(a);
+  printInt(b);
+  printInt(c);
+}
+
+func main() {
+  myPrintZero();
+  println();
+  myPrintOne(1);
+  println();
+  myPrintTwo(1,2);
+  println();
+  myPrintThree(1,2,3);
+  println();
+}
+
