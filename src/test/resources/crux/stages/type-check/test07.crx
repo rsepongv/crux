@@ -1,0 +1,7 @@
+// test local variable
+
+func main() {
+  var a int;
+  a = 42;
+  printInt(a);
+}

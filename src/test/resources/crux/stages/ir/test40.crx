@@ -1,0 +1,36 @@
+// test comparisons
+
+func test( a int, b int) {
+  printBool(a >= b);
+  println();
+  printBool(a <= b);
+  println();
+  printBool(a != b);
+  println();
+  printBool(a == b);
+  println();
+  printBool(a < b);
+  println();
+  printBool(a > b);
+  println();
+}
+
+func main() {
+  var i int;
+  var j int;
+  i = 0;
+  loop {
+    if (i > 4) {
+      break;
+    }
+    j = 0;
+    loop {
+       if (j > 4) {
+         break;
+       }
+       test(i, j);
+       j = j + 1;
+    }
+    i = i + 1;
+  }
+}

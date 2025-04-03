@@ -1,0 +1,13 @@
+// test using array cell as index in assignment
+
+var a [3]int;
+var b [10]int;
+  
+func main() {
+
+  b[5] = 2;
+  a[b[5]] = 100;
+
+  printInt(a[2]);
+}
+

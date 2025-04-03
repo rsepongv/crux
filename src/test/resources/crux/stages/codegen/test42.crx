@@ -1,0 +1,22 @@
+// test evaluation order
+
+var a [3]int;
+
+func test() int {
+     a[1] = 0;
+     return 2;
+}
+
+func main() {
+  a[0] = 1;
+  a[1] = 2;
+  a[2] = 3;
+  a[a[1]] = a[1] + test();
+  printInt(a[0]);
+  println();
+  printInt(a[1]);
+  println();
+  printInt(a[2]);
+  println();
+}
+

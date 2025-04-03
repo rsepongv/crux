@@ -1,0 +1,9 @@
+// test parameter passing
+
+func rec( a int) {
+  printInt(a);
+}
+
+func main() {
+  rec(41);
+}

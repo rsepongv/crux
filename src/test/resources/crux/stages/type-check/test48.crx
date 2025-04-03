@@ -1,0 +1,22 @@
+// non-recursive fib
+
+func main() {
+  var i int;
+  i = 0;
+  var a int;
+  var b int;
+  a = 0;
+  b = 1;
+  loop {
+    if (i >= 10) {
+      break;
+    }
+    printInt(b);
+    println();
+    var c int;
+    c = a + b;
+    a = b;
+    b = c;
+    i = i + 1;
+  }
+}

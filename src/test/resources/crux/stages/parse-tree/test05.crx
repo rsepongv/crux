@@ -1,0 +1,9 @@
+
+// test declaration
+
+var global int;
+var a [5]bool;
+
+func main() {
+
+}
