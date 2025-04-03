@@ -1,0 +1,23 @@
+// test logical or
+func myTrue() bool {
+  printInt(1);
+  println();
+  return true;
+}
+
+func myFalse() bool {
+  printInt(0);
+  println();
+  return false;
+}
+
+func main() {
+  printBool(myTrue() || myTrue());
+  println();
+  printBool(myFalse() || myTrue());
+  println();
+  printBool(myTrue() || myFalse());
+  println();
+  printBool(myFalse() || myFalse());
+  println();
+}

@@ -1,0 +1,6 @@
+// test global variable with mips instruction name
+var addi int;
+func main() {
+  addi = readInt();
+  printInt(addi);
+}
